@@ -1,2 +1,3 @@
 main = do
-  putStrLn "Mac and cheese is the best!" 
+  putStrLn "Mac and cheese is the best!  " 
+
