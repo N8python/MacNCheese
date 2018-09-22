@@ -1,3 +1,3 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.0.0.rc' 
+gem 'rails', '3.1.0.rc' 
