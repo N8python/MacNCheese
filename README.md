@@ -11,7 +11,7 @@ If you would like to contribute, feel free but please follow the guidelines: htt
 Our code of conduct is located at this location: https://github.com/RDIL/MacNCheese/blob/master/CODE_OF_CONDUCT.md
 
 ## How to run the code  
-How to run the code is stated in the wiki!  
+How to run the code is stated in the [wiki](https://github.com/RDIL/MacNCheese/wiki)!  
 
 ### Quick thanks
 I would like to thank https://repl.it for allowing me to crash 5 different development servers in the testing of the Lua version.  
