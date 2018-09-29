@@ -1,0 +1,17 @@
+language: python
+language: node_js
+os:
+  - linux
+  - osx
+node_js:
+  - node
+python:
+  - "3.4"
+  - "3.5"
+  - "3.6"
+install:
+  - pip install -r requirements.txt
+  - "python3 -m pip install --upgrade setuptools wheel"
+scripts:
+  - "python3 setup.py sdist bdist_wheel"
+  - "npm test"
