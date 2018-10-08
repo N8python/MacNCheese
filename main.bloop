@@ -1,5 +1,5 @@
 DEFINE PROCEDURE ''HELLO-WORLD'' [N]: 
-	  BLOCK 0: BEGIN 
+    BLOCK 0: BEGIN 
     PRINT['Mac and cheese is the best! '] 
     BLOCK 0: END. 
     HELLO-WORLD[1];
