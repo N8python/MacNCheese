@@ -1,4 +1,5 @@
-import java.lang.*;
-public static void main(String[] args) {
-  System.out.println("Mac and cheese is the best!");
+public class main{
+  public static void main(String[] args){
+    System.out.println("Mac and cheese is the best!");
+  }
 }
