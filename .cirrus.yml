@@ -26,3 +26,9 @@ task:
       osx_instance:
         image: mojave-xcode-10.1
       script: chmod +x main.rb && ruby main.rb
+    - name: Lua Job
+      container:
+        image: superpaintman/lua:latest
+      env:
+        LUAFILE: main.lua
+      script: lua ./$LUAFILE
