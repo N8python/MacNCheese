@@ -2,8 +2,9 @@
   "name": "MacNCheese",
   "version": "1.0.0",
   "private": true,
-  "dependencies": {
-  },
+  "dependencies": {},
+  "license": "MIT",
   "scripts": {
+    "test": "cat main.node.ja"
   }
 }
