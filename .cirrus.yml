@@ -1,0 +1,11 @@
+task:
+  auto_cancellation: false
+  matrix:
+    - name: JDK Job
+      container:
+        image: gradle:jdk8
+      script: find . -name \*.java -exec javac {} \;
+    - name: Python Job
+      container:
+        image: jumbocakeyumyum/flake8:latest
+      script: flake8 *.py
