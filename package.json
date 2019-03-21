@@ -1,10 +1,11 @@
 {
   "name": "MacNCheese",
+  "author": "RDIL",
   "version": "1.0.0",
   "private": true,
   "dependencies": {},
   "license": "MIT",
   "scripts": {
-    "test": "cat main.node.ja"
+    "test": "cat main.node.js"
   }
 }
