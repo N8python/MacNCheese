@@ -4,8 +4,12 @@ task:
     - name: JDK Job
       container:
         image: gradle:jdk8
-      script: find . -name \*.java -exec javac {} \;
+      script: javac main.java
     - name: Python Job
       container:
         image: jumbocakeyumyum/flake8:latest
       script: flake8 *.py
+    - name: NodeJS Job
+      container:
+        image: node:latest
+      script: npm test
