@@ -16,7 +16,7 @@ task:
     - name: Alpine Job
       container:
         image: alpine:latest
-      script: chmod +x main.sh && bash main.sh && chmod -x main.sh
+      script: apk add bash && chmod +x main.sh && bash main.sh && chmod -x main.sh
     - name: Haskell Job
       container:
         image: haskell:latest
