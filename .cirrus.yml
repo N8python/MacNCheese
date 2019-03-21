@@ -22,3 +22,7 @@ task:
       container:
         image: haskell:latest
       script: ghci main.hs
+    - name: Ruby Job
+      osx_instance:
+        image: mojave-xcode-10.1
+      script: chmod +x main.rb && ruby main.rb
