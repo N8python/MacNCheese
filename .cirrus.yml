@@ -57,7 +57,7 @@ task:
       container:
         image: golang:1.12.1-alpine3.9
       script: go run main.go
-    - name: Golang-11 Job:
+    - name: Golang-11 Job
       container:
         image: golang:1.11.6-alpine3.9
       script: go run main.go
