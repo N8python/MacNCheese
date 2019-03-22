@@ -32,7 +32,7 @@ task:
       env:
         LUAFILE: main.lua
       script: lua ./$LUAFILE
-    - name: GNU Make Job
+    - name: Makefile Job
       container:
-        image: ubuntu:trusty
+        image: python:latest
       script: make
