@@ -36,3 +36,7 @@ task:
       container:
         image: python:latest
       script: make
+    - name: Crystal Job
+      container:
+        image: crystallang/crystal:latest
+      script: crystal run main.cr
