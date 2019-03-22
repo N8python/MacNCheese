@@ -17,10 +17,6 @@ task:
       container:
         image: node:latest
       script: npm test
-    - name: NodeJS-DubniumLTS Job
-      container:
-        image: node:dubnium-jesse
-      script: npm test
     - name: Alpine Job
       container:
         image: alpine:latest
