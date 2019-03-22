@@ -1,17 +1,25 @@
 task:
   auto_cancellation: false
   matrix:
-    - name: JDK Job
+    - name: JDK8 Job
       container:
         image: gradle:jdk8
+      script: javac main.java
+    - name: JDK9 Job
+      container:
+        image: gradle:jdk9
       script: javac main.java
     - name: Python Job
       container:
         image: jumbocakeyumyum/flake8:latest
       script: flake8 *.py
-    - name: NodeJS Job
+    - name: NodeJS@Latest Job
       container:
         image: node:latest
+      script: npm test
+    - name: NodeJS@DubniumLTS Job
+      container:
+        image: node:dubnium-jesse
       script: npm test
     - name: Alpine Job
       container:
@@ -45,7 +53,11 @@ task:
         image: node:dubnium
       prep_script: npm install -g coffeescript
       script: coffee -M main.coffee
-    - name: Golang Job
+    - name: Golang-12 Job
       container:
         image: golang:1.12.1-alpine3.9
+      script: go run main.go
+    - name: Golang-11 Job:
+      container:
+        image: golang:1.11.6-alpine3.9
       script: go run main.go
