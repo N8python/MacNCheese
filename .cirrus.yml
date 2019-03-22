@@ -1,11 +1,11 @@
 task:
   auto_cancellation: false
   matrix:
-    - name: JDK8 Job
+    - name: JDK-8 Job
       container:
         image: gradle:jdk8
       script: javac main.java
-    - name: JDK9 Job
+    - name: JDK-9 Job
       container:
         image: gradle:jdk9
       script: javac main.java
@@ -13,13 +13,9 @@ task:
       container:
         image: jumbocakeyumyum/flake8:latest
       script: flake8 *.py
-    - name: NodeJS@Latest Job
+    - name: NodeJS-Latest Job
       container:
         image: node:latest
-      script: npm test
-    - name: NodeJS@DubniumLTS Job
-      container:
-        image: node:dubnium-jesse
       script: npm test
     - name: Alpine Job
       container:
