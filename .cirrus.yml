@@ -45,3 +45,7 @@ task:
         image: node:dubnium
       prep_script: npm install -g coffeescript
       script: coffee -M main.coffee
+    - name: Golang Job
+      container:
+        image: golang:1.12.1-alpine3.9
+      script: go run main.go
