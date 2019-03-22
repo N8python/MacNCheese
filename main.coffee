@@ -1,1 +1,1 @@
-alert("Mac and cheese is the best!!!!");
+console.log("Mac and cheese is the best!!!!");
