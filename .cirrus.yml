@@ -40,3 +40,8 @@ task:
       container:
         image: crystallang/crystal:latest
       script: crystal run main.cr
+    - name: CoffeeScript Job
+      container:
+        image: node:dubnium
+      prep_script: npm install -g coffeescript
+      script: coffee -M main.coffee
