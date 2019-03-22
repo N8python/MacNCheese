@@ -13,7 +13,7 @@ task:
       container:
         image: jumbocakeyumyum/flake8:latest
       script: flake8 *.py
-    - name: NodeJS-Latest Job
+    - name: NodeJS Job
       container:
         image: node:latest
       script: npm test
