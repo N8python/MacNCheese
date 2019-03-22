@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {},
   "license": "MIT",
+  "homepage": "https://github.com/RDIL/MacNCheese",
   "main": "main.node.js",
   "scripts": {
     "test": "node main.node.js"
